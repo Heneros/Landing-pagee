@@ -1,0 +1,20 @@
+@charset "UTF-8";
+ 
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "mixins";  
+@import "core";    
+                
+                                     
+@import "blocks/header";    
+@import "blocks/section-top";   
+@import "blocks/buttons";   
+@import "blocks/devider";      
+@import "blocks/advantages";    
+@import "blocks/history";           
+@import "blocks/service";       
+@import "blocks/recent";       
+@import "blocks/price";      
+@import "blocks/support";
+@import "blocks/footer";                                                                          

@@ -1,0 +1,155 @@
+header  {
+	.container{
+		height: 100%;
+		min-height: 100%;
+		max-width: 1241px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 5px;
+		position: relative;
+		z-index: 10;
+	}
+}  
+
+
+header  {
+	.show_menu{
+	color: #9a8866; 
+	padding: 13px 11px 8px;
+	display: none;
+	cursor: pointer;
+	}
+}
+
+header .top_line, .bottom_line {
+  height: 12.2vh;
+  background-color: #000000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  cursor: auto;
+  transition: max-height 0.5s ease;
+}
+
+header .top_line {
+    max-height: 114px;
+	height: 12.2vh;
+	box-shadow: 0 0 100px rgba(65,61,52,1), 0 0 6px rgba(232,190,107,0.8);
+	top:0;
+	z-index: 9999999;
+}
+#page.relativeHead .top_line {
+	position: relative;
+}
+
+header .top_line .notifications + .container {
+	top: 14px;
+}
+header .top_line .container {
+	min-height: inherit;
+	position: absolute;
+	padding:0;
+	bottom: 0;
+	max-height: 113px;
+	left: 0;
+	right: 0;
+}
+.bottom_line {
+	bottom: 0;
+	width: 100%;
+}
+header .top_line.main {
+    max-height: 12.2vh !important;
+}
+header .top_line.main .hidable {
+    top: 12.2vh;
+}
+header .logo, header .logo img,
+header .show_menu, header .show_menu img,
+header .battlestate, header  img,
+header .account {
+	max-height: 12.2vh;
+	width: auto;
+}
+ 
+
+header ul.menu {
+	width: 500px;
+}
+header .menu li {
+	display:inline-block;
+	margin: 0;
+	position: relative;
+}
+header { 
+	  .menu { 
+	       li {
+	          a {
+   color:#9a8866;
+   display:block;
+   font-size: 20px;
+   padding: 1px 8px;
+   margin: 3px 10px;
+   border-radius: 3px;
+   text-decoration: none;
+   text-transform: uppercase;
+}}}}
+
+
+
+header{
+	.menu {
+		li a:hover {
+			color:#000;
+			background-color:#9a8866;
+		}
+	}
+	.main__trigger {
+		display: none;
+		font-size: 45px;
+		color:#9a8866;
+		float: right;
+
+		line-height: 1;
+		cursor: pointer; 
+		transition: color .3s ease-in-out;
+	  }
+	
+}
+
+@media screen and (max-width: 1256px){
+
+	header{
+		.logo{
+				max-width: calc( 100% - 55px );
+		}
+
+		.main__trigger {
+			display: flex;
+			justify-content: center;
+			font-size: 45px;
+			color:#9a8866;		 
+			line-height: 1;
+			cursor: pointer;
+			transition: color .3s ease-in-out;
+		  }
+		  .hidable{
+			background-color: #000000;
+			z-index: 104;
+			position: fixed;
+			top: 12.2vh;
+			left: 0;
+			right: 0;
+			padding: 10px;
+			border-bottom: 1px solid rgba(154,136,102,0.5);
+			display: none;
+			max-height: 88vh;
+		}
+		
+	}
+	header ul.menu {
+		width: 100%;
+	}
+
+}

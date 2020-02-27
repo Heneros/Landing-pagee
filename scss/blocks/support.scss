@@ -1,0 +1,106 @@
+.support {
+  margin-top: 140px;
+  padding: 140px 0 250px;
+  background-color: #0e0e0e;
+  .support__title {
+    color: #9a8866;
+    font-size: 36px;
+    letter-spacing: 3.6px;
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 29px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+   .support__news{
+      position: relative;
+      box-shadow: 0 0 100px rgba(65,61,52,1), 0 0 6px rgba(232,190,107,0.8);
+      margin: 10px auto;
+      text-align: left;
+      background: black;
+      width: 900px;
+      max-width: 100%; 
+      padding: 5px 5px 5px 50px;
+      border-radius: 4px;
+      color: #aeaeb0;
+      font-size: 23px;
+      .icon{
+        position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    background: url('../../img/warning_icon.png') no-repeat center center scroll;
+    width: 30px;
+    background-size: contain;
+    opacity: 0.7;
+}              
+
+  }
+  form input, form select, form textarea {
+    display: block;
+    box-shadow: 0 0 100px rgba(65,61,52,1), 0 0 6px rgba(232,190,107,0.8);
+    text-align: left;
+    border: none;
+    padding: 11px 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    font-size: 17pt;
+    background: #000000;
+    color: #9a8866;
+    border-radius: 3px;
+    width: 343px;
+    max-width: 100%;
+  }
+  .support__btn {
+    @include btn($advantages-gray) {
+      width: 145px;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.12px;
+      background-color: #9a8866;
+      padding: 13px 0;
+      display: block;
+      margin: 30px auto;
+      font-weight: 600;
+    };
+  }
+}
+
+@media (max-width: 1080px) {
+
+  .support {
+    background-size: cover;
+    padding: 140px 0;
+
+    .support__elements {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .support__man {
+      position: relative;
+      left: auto !important;
+      right: auto !important;
+      bottom: auto !important;
+      width: auto;
+      flex-basis: 20%;
+      margin: 25px 0;
+
+      &::after {
+        display: none;
+      }
+
+    }
+
+    .support__info {
+      position: static;
+      opacity: 1;
+    }
+
+  }
+
+
+}
+
