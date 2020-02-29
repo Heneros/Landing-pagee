@@ -130,10 +130,10 @@
           }
   
         }
-        .collapsible__text{  
-          display: none;
-          overflow: hidden;  
-        }
+        // .collapsible__text{  
+        //   display: none;
+        //   overflow: hidden;  
+        // }
 
 
       }
@@ -183,6 +183,10 @@
 
 }
 
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
 @media (max-width: 980px) {
 
   .price {
@@ -220,3 +224,10 @@
   }
 
 }
+
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+ 

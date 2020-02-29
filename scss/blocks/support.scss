@@ -11,8 +11,8 @@
     margin: 20px 0;
     text-align: center;
   }
-
-   .support__news{
+ 
+   ul{
       position: relative;
       box-shadow: 0 0 100px rgba(65,61,52,1), 0 0 6px rgba(232,190,107,0.8);
       margin: 10px auto;
@@ -34,8 +34,7 @@
     background-size: contain;
     opacity: 0.7;
 }              
-
-  }
+}
   form input, form select, form textarea {
     display: block;
     box-shadow: 0 0 100px rgba(65,61,52,1), 0 0 6px rgba(232,190,107,0.8);
@@ -79,28 +78,28 @@
       flex-wrap: wrap;
     }
 
-    .support__man {
-      position: relative;
-      left: auto !important;
-      right: auto !important;
-      bottom: auto !important;
-      width: auto;
-      flex-basis: 20%;
-      margin: 25px 0;
-
-      &::after {
-        display: none;
+    ul{
+      li{
+        font-size: 18px;
+        padding: 35px; 
       }
-
     }
-
-    .support__info {
-      position: static;
-      opacity: 1;
-    }
+  
 
   }
 
 
+
 }
 
+@media (max-width: 586px) {
+  .support{
+    ul{
+      li{ 
+        font-size: 17px;
+        padding: 15px;
+      }
+    }
+  }
+
+}
