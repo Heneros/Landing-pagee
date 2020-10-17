@@ -28,7 +28,7 @@ gulp.task('serve', function(){
 
 const scripts = [
   "node_modules/jquery/dist/jquery.min.js",
-  "src/js/functions.js",
+  "src/js/**/*.js",
 ];
 
 gulp.task('sass', function(){
