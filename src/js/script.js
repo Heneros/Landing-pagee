@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 $(document).ready(function(){
   //anchor links
   $(".menu").on("click","a", function (event) {
