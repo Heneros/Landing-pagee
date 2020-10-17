@@ -14,10 +14,6 @@ const svgmin = require('gulp-svgmin');
 const cheerio = require('gulp-cheerio');
 const replace = require('gulp-replace');
 
-
-sass.compiler = require('node-sass');
-
-
 gulp.task('serve', function(){
  browserSync.init({
    server:{
@@ -25,11 +21,6 @@ gulp.task('serve', function(){
    }
  });
 });
-
-const scripts = [
-  "node_modules/jquery/dist/jquery.min.js",
-  "src/js/**/*.js",
-];
 
 gulp.task('sass', function(){
 return gulp.src('scss/style.scss')
@@ -51,7 +42,7 @@ gulp.task('html', function(){
  .pipe(browserSync.reload({stream: true}));
 });
 gulp.task('js', function(){
-  return gulp.src(scripts)
+  return gulp.src('js/**/*.js')
   .pipe(gulp.dest('build/js'))
   .pipe(browserSync.reload({stream: true}));
 });
