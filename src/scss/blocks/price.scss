@@ -53,9 +53,9 @@
       }
 
     }
-
+           
     .price__top {
-      background-image: url('../../img/5.jpg');
+      background-image: url('../img/5.jpg');
       background-position: center;
       background-repeat: no-repeat;
       padding-bottom: 90px;
@@ -110,34 +110,52 @@
       .price__list {
         text-align: center;
         margin: 40px 0;
-
         li {
           font-size: 14px;
           line-height: 20px;
           margin: 20px 0;
           font-weight: 600;
           color: $advantages-gray;
-          button{
-            color: #ceb586;
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 19px;
-            font-weight: 600;
-            &:hover{
-              color: #615858;
-            }
-          }
-  
         }
-        // .collapsible__text{  
-        //   display: none;
-        //   overflow: hidden;  
-        // }
-
-
       }
+      .collapsible__text {
+        text-align: center;
+        margin: 40px 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        li {
+          font-size: 14px;
+          line-height: 20px;
+          margin: 20px 0;
+          font-weight: 600;
+          color: $advantages-gray;
+        }
+      }
+      .accordion{
+        color: #ceb586;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 19px; 
+        font-weight: 600;
+        &:hover{
+          color: #615858;
+        }  
+        &:after{
+          content: '\002B';
+          color:  #ceb586;
+          font-weight: bold;
+          font-size: 35px;
+          top: 4px;
+          left: 15px;
+          position: relative;
+        }
 
+      } 
+      .active:after {
+        content: "\2212";
+        }
       .price__btn {
         @include btn($advantages-gray) {
           width: 145px;
@@ -183,9 +201,9 @@
 
 }
 
-.active, .accordion:hover {
-  background-color: #ccc;
-}
+// .active, .accordion:hover {
+//   background-color: #ccc;
+// }
 
 @media (max-width: 980px) {
 
